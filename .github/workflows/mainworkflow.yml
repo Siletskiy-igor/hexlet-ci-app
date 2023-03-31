@@ -1,0 +1,5 @@
+jobs:
+  set: make setup
+  start: mare start
+  tests: make test
+  lint: make lint
