@@ -1,10 +1,8 @@
-name: mainworkflow
-on: push
 jobs:
   Do homeWork:
     runs-on: ubuntu-latest
     steps:
-      run: make setup
-      run: make start
+      uses: make setup
+      users: make start
       run: make test
       run: make lint
