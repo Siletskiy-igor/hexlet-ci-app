@@ -1,5 +1,5 @@
 jobs:
   set: make setup
-  start: mare start
+  start: make start
   tests: make test
   lint: make lint
