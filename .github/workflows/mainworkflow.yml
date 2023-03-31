@@ -1,8 +1,5 @@
-jobs:
-  Do homeWork:
-    runs-on: ubuntu-latest
-    steps:
-      uses: make setup
-      users: make start
-      run: make test
-      run: make lint
+steps:
+    uses: make setup
+    users: make start
+    run: make test
+    run: make lint
