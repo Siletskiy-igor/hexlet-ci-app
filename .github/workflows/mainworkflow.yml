@@ -1,5 +1,5 @@
-name: Fucking
-run-name: ${{ github.actor }} is testing out GitHub Actions
+name: mainworkflow
+run-name: ${{ github.actor }} is testing out hexlet-ci-app
 on: push
 jobs:
   build:
@@ -9,9 +9,5 @@ jobs:
       - uses: actions/setup-node@v3
       - run: make-install
       - run: make-start
-  tests:
-    steps:
       - run: make-test
-  lint:
-    steps:
       - run: make-lint
