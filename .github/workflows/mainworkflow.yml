@@ -10,6 +10,8 @@ jobs:
       - run: make-install
       - run: make-start
   tests:
-    - run: make-test
+    steps:
+      - run: make-test
   lint:
-    - run: make-lint
+    steps:
+      - run: make-lint
