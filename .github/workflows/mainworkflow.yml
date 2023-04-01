@@ -1,5 +1,15 @@
-steps:
-    uses: make setup
-    users: make start
-    run: make test
-    run: make lint
+name: Fucking
+run-name: ${{ github.actor }} is testing out GitHub Actions
+on: push
+jobs:
+  build:
+    run-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      - run: make-install
+      - run: make-start
+  tests:
+    - run: make-test
+  lint:
+    - run: make-lint
